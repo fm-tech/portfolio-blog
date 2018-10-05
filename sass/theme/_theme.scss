@@ -1,1 +1,49 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+//google fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+//font var
+$open-sans: "Open Sans", sans-serif;
+//colors
+$blackDust: #111410;
+$offWhite: #f2f2f2;
+$sandGrey: #aaaaaa;
+$blue: #1a237e;
+
+// spacing and padding
+$meta-padding: 1vh 1vh;
+$content-padding: 1vh 1vh 1vh 1vh;
+
+//theme-defaults
+body {
+  background-color: $offWhite;
+}
+h1 h2 h3 h4 h5 h6 p strong em {
+  font-family: $open-sans;
+}
+a {
+  font-family: $open-sans;
+  color: $blue;
+}
+//content
+.entry-meta {
+  padding: $meta-padding;
+}
+
+.entry-content {
+  padding: $content-padding;
+}
+
+.entry-footer {
+  padding: $meta-padding;
+}
+.understrap-read-more-link {
+  background-color: $blackDust;
+}
+.understrap-read-more-link a:hover {
+  background-color: $blackDust;
+}
+
+//widgets
+.widget_search {
+  padding: $content-padding;
+}

@@ -78,3 +78,7 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+// Theme support 
+
+add_theme_support('custom-logo');
