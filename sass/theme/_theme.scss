@@ -10,8 +10,8 @@ $sandGrey: #aaaaaa;
 $blue: #1a237e;
 
 // spacing and padding
-$meta-padding: 1vh 1vh;
-$content-padding: 1vh 1vh 1vh 1vh;
+$padding: 1vh 1vh;
+$top-padding: 1vh 0vh 1vh 0vh;
 
 //theme-defaults
 body {
@@ -24,17 +24,25 @@ a {
   font-family: $open-sans;
   color: $blue;
 }
+
+//top
+
+//navbar
+#top {
+  background-color: $blackDust;
+  color: $offWhite;
+}
 //content
 .entry-meta {
-  padding: $meta-padding;
+  padding: $top-padding;
 }
 
 .entry-content {
-  padding: $content-padding;
+  padding: $top-padding;
 }
 
 .entry-footer {
-  padding: $meta-padding;
+  padding: $top-padding;
 }
 .understrap-read-more-link {
   background-color: $blackDust;
@@ -43,7 +51,17 @@ a {
   background-color: $blackDust;
 }
 
+//posts entry
+img.wp-post-image {
+  width: 100%;
+}
 //widgets
 .widget_search {
-  padding: $content-padding;
+  padding: $top-padding;
+}
+.widget-area ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1vh;
+  text-indent: -1em;
 }

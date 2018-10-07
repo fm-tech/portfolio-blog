@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<!-- ******************* Jumbotron ******************* -->
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center" id="top">
 	<h2 class="display-4"><?php bloginfo('description'); ?></h1>
 	
 	</div>
@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<nav class="navbar ntransparent navbar-expand-lg navbar-light">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
