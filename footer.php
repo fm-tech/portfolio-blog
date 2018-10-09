@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+						<!-- hooks has understrap site info  -->
 
 					</div><!-- .site-info -->
 

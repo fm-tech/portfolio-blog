@@ -9,6 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+
+// look at this please! !ISSUE-1
 if ( ! function_exists( 'understrap_site_info' ) ) {
   /**
    * Add site info hook to WP hook library.

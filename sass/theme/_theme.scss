@@ -12,6 +12,7 @@ $blue: #1a237e;
 // spacing and padding
 $padding: 1vh 1vh;
 $top-padding: 1vh 0vh 1vh 0vh;
+$section-paddding: 5vh 0vh 5vh 0vh;
 
 //theme-defaults
 body {
@@ -59,9 +60,34 @@ img.wp-post-image {
 .widget_search {
   padding: $top-padding;
 }
-.widget-area ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 1vh;
-  text-indent: -1em;
+
+.widget-area {
+  padding-left: 5vh;
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1vh;
+    text-indent: -0.5em;
+  }
+}
+//footer
+.footer-widget {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1vh;
+    text-indent: -0.5em;
+  }
+}
+
+//front page
+#about-me {
+  margin: 0;
+  padding: 2vh 0 0vh 0;
+}
+#WorkExperience {
+  padding: $section-paddding;
+}
+#educational-sec {
+  padding: $section-paddding;
 }
