@@ -31,15 +31,15 @@ $container   = get_theme_mod( 'understrap_container_type' );
 <main class="site-main" id="main">
 
 <!-- about me section -->
-<div class="row">
-	<div class="col-sm-12 col-md-4">
+<div class="row" id="about-me">
+	<div class="col-sm-12 col-md-3" >
 		           
 		            <h1 class="display-2"><?php bloginfo('title'); ?></h1>
-		                <h1 class="display-4">About me</h1>
+		                <h2 class="display-4">About me</h2>
 	</div>
 	
 	                
-	              <div class="col-sm-12 col-md-8" id="about-me">
+	              <div class="col-sm-12 col-md-9 text-right">
 	              	  <p class="text-right"><?php show_post('about'); ?></p>
 		          
 	</div>
@@ -68,7 +68,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	
 	<?php 
         $frontPagePost = new WP_Query(array(
-          'posts_per_page' => 1,
+          'posts_per_page' => 2,
           'category_name'  => 'education'
         ));                       
         while ($frontPagePost->have_posts()) {
